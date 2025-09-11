@@ -1,0 +1,72 @@
+#ZERO TRUST ARCHITECTURE - Trust Nothing, Verify Everything
+
+Continuous Verification - Verify the user every time they try to get access to a resource
+Least Privilege - Give users access to the resources they need, no more, no less
+Assume Breach - Assume the system is breached, implement encryption so even if an attacker is able to access your data they are not able to decipher it
+
+
+##Tools
+
+Verify Explicitly
+[Continuous Verification]
+Multi Step Identity Check
+First Line Defense - Stronger authentication after login
+1. MFA - e.g. okta
+
+Micro Segmentation
+[Assume Breach]
+-Breaking down the network into segments - allows granular control of traffic
+e.g. VPN, VMWARE
+
+2. Identity and Access Management (IAM)
+[Enforces Least Privilege]
+Microsoft Azure Active Identity
+Update user roles and change them as job roles change
+
+4. Encryption Everywhere
+[Assume Breach]
+Even if data is intercepted it can not be read
+Bcrypt
+AWS - Encryption
+
+
+-Continuous Monitoring and Analytics
+[Assume Breach]
+e.g.. Splunk 
+Crowdstrike Falcon
+
+
+##Challenges
+
+1. Legacy Systems Compatibility
+Costly and time consuming, some systems are not able to integrate with zero trust tools such as tools that use 
+continuous monitoring and analysis
+
+2. Cultural Resistance
+Introduces more friction - Having to authenticate multiple times a day can feel like a burden
+especially for people that are used to logging in one time a day
+
+3. Complexity
+Detailed planning and coordination
+
+4. Cost and Resource Investment
+Financial investment in tools and updating legacy systems, might require more staff, training staff etc
+
+
+##How to Get Started with Zero Trust
+1. Start with Identity and Access Management (IAM) - who are the people using your product and what
+level of access should they have
+Implement MFA
+Look at least privilege access - employees should only have access to what they need to do their job, no more no less
+
+
+2. Prioritize High-Risk Areas
+What is most important to protect. Think what are the most high value areas
+Use micro segmentation - implement granular access controls, continuous monitoring, encryption, etc.
+
+
+3. Implement continuous monitoring
+Use tools that provide insight into user behavior and access - start by developing these tools in your highest risk areas.
+
+4. Adopt a Phased Approach
+Focus on most critical assets and gradually build a security model to cover your system
